@@ -1,8 +1,17 @@
 aid: yesware
 name: Yesware
-description: Yesware is a company surfaced as a portfolio company of battery-ventures, gv and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Yesware is a sales engagement and email productivity platform that lives
+  inside Gmail and Outlook, helping sales teams track email opens, link clicks,
+  and attachment views in real time, run multi-touch outreach campaigns and
+  sequences, use shared email templates, schedule meetings, and prospect from a
+  database of 100M+ B2B contacts. It provides bi-directional Salesforce sync to
+  log activities automatically and reporting dashboards on template and team
+  performance. Yesware does not currently expose a public developer REST API;
+  its integration surface is delivered through Salesforce sync, native inbox
+  extensions, and iPaaS connectors. It was surfaced as a portfolio company of
+  Battery Ventures and GV and profiled in the API Evangelist network. Backed by
+  Battery Ventures and GV.
 url: https://raw.githubusercontent.com/api-evangelist/yesware/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,11 +20,30 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://www.yesware.com/wp-content/uploads/2021/03/yesware-logo.png
 tags:
 - Company
+- Sales Engagement
+- Email Tracking
+- Sales Productivity
+- CRM
+- Salesforce
+- Outreach
+- Email Marketing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +52,43 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://yesware.com
+  url: https://www.yesware.com
+- type: Documentation
+  url: https://docs.yesware.com/docs/
+- type: Support
+  url: https://help.yesware.com/
+- type: HelpCenter
+  url: https://help.yesware.com/
+- type: Blog
+  url: https://www.yesware.com/blog/
+- type: Integrations
+  url: https://www.yesware.com/integrations
+- type: Pricing
+  url: https://www.yesware.com/pricing/
+- type: SignUp
+  url: https://www.yesware.com/sign-up
+- type: Login
+  url: https://www.yesware.com/user/sign-in
+- type: TermsOfService
+  url: https://www.yesware.com/terms/
+- type: GitHubOrganization
+  url: https://github.com/Yesware
+- type: LLMsTxt
+  url: llms/yesware-llms.txt
+- type: DomainSecurity
+  url: security/yesware-domain-security.yml
+- type: TrustCenter
+  url: security/yesware-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/yesware-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.yesware.com/security/
+- type: Compliance
+  url: https://www.yesware.com/security/
+- type: WellKnown
+  url: well-known/yesware-well-known.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1

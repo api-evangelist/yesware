@@ -1,0 +1,19 @@
+generated: '2026-07-21'
+method: searched
+host: https://www.yesware.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  yesware.com serves a 301 redirect on /.well-known/* paths; none resolve to a
+  published discovery document. www.yesware.com returns 404 for security.txt.
+  Security contact + disclosure policy are published on the human security page
+  (https://www.yesware.com/security/) rather than a machine-readable security.txt.
