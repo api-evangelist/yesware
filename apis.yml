@@ -7,34 +7,46 @@ description: >-
   sequences, use shared email templates, schedule meetings, and prospect from a
   database of 100M+ B2B contacts. It provides bi-directional Salesforce sync to
   log activities automatically and reporting dashboards on template and team
-  performance. Yesware does not currently expose a public developer REST API;
-  its integration surface is delivered through Salesforce sync, native inbox
-  extensions, and iPaaS connectors. It was surfaced as a portfolio company of
-  Battery Ventures and GV and profiled in the API Evangelist network. Backed by
-  Battery Ventures and GV.
+  performance. Yesware has been part of Vendasta since October 2022. It does not
+  expose a public developer REST API, GraphQL endpoint, webhook catalog, MCP
+  server or agent card — its own help center answered "does Yesware have a
+  public-facing API" with no, and its entire documentation set at
+  docs.yesware.com is end-user product help. The integration surface is delivered
+  through Salesforce sync, native Gmail/Outlook inbox extensions, LinkedIn, Zoom,
+  Google Meet and Microsoft Teams connectors, and third-party iPaaS platforms.
+  The most machine-readable surface Yesware operates is its Atlassian Statuspage.
+  It was surfaced as a portfolio company of Battery Ventures and GV and profiled
+  in the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/yesware/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - battery-ventures
 - gv
+x-acquired-by: vendasta
+x-acquired-date: '2022-10-17'
 x-tier: stub
 x-tier-reason: portfolio-lead
 accessModel:
-  pricing: unknown
-  onboarding: approval
-  trial: false
-  try_now: false
-  public: false
-  label: Requires approval
-  confidence: medium
-  source: []
-  generated: '2026-07-22'
-  method: derived
+  pricing: freemium
+  onboarding: self-service
+  trial: true
+  try_now: true
+  public: true
+  label: Free tier, self-service sign-up
+  confidence: high
+  source:
+  - https://www.yesware.com/plans-and-pricing
+  - https://www.yesware.com/sign-up
+  generated: '2026-08-13'
+  method: searched
+  note: >-
+    Describes access to the Yesware PRODUCT (seat-based subscription, Free tier,
+    self-serve sign-up). There is no API access model because there is no public API.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-21'
-image: https://www.yesware.com/wp-content/uploads/2021/03/yesware-logo.png
+modified: '2026-08-13'
+image: https://cdn.prod.website-files.com/6036bf3265493cd8d57a7527/62aa0d96e8c9ac7fb2d2528b_882b3fdf09a3292fea8075d218f74d92_yesware-featured-image.png
 tags:
 - Company
 - Sales Engagement
@@ -44,6 +56,9 @@ tags:
 - Salesforce
 - Outreach
 - Email Marketing
+- Sales Enablement
+- Gmail
+- Outlook
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -55,22 +70,34 @@ common:
   url: https://www.yesware.com
 - type: Documentation
   url: https://docs.yesware.com/docs/
+- type: GettingStarted
+  url: https://docs.yesware.com/docs/getting-started-with-yesware
 - type: Support
-  url: https://help.yesware.com/
+  url: mailto:support@yesware.com
 - type: HelpCenter
-  url: https://help.yesware.com/
+  url: https://docs.yesware.com/docs/
 - type: Blog
   url: https://www.yesware.com/blog/
 - type: Integrations
   url: https://www.yesware.com/integrations
 - type: Pricing
-  url: https://www.yesware.com/pricing/
+  url: https://www.yesware.com/plans-and-pricing
+- type: Plans
+  url: plans/yesware-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/yesware-rate-limits.yml
+- type: Lifecycle
+  url: lifecycle/yesware-lifecycle.yml
+- type: StatusPage
+  url: https://status.yesware.com/
 - type: SignUp
   url: https://www.yesware.com/sign-up
 - type: Login
   url: https://www.yesware.com/user/sign-in
 - type: TermsOfService
   url: https://www.yesware.com/terms/
+- type: PrivacyPolicy
+  url: https://www.yesware.com/privacy/
 - type: GitHubOrganization
   url: https://github.com/Yesware
 - type: LLMsTxt
@@ -85,10 +112,27 @@ common:
   url: https://www.yesware.com/security/
 - type: Compliance
   url: https://www.yesware.com/security/
-- type: WellKnown
-  url: well-known/yesware-well-known.yml
 x-enrichment:
-  date: '2026-07-21'
-  status: enriched
-  artifacts_added: 5
+  date: '2026-08-13'
+  status: minimal
+  artifacts_added: 3
   pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Yesware ships only an end-user product — every one of the 81 pages in
+    docs.yesware.com's sitemap is Gmail/Outlook product help, no API host resolves
+    (api.yesware.com does not exist in DNS), and Yesware's own retired help-center
+    article "Does Yesware have a public-facing API instead of a Google extension?"
+    answered no.
+  evidence:
+  - url: https://docs.yesware.com/sitemap.xml
+    status: 200
+  - url: https://www.yesware.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.yesware.com/.well-known/api-catalog
+    status: 404
+  - url: https://support.yesware.com/hc/en-us/articles/15420545065623-How-many-API-calls-does-Yesware-use
+    status: 301
+  checked: '2026-08-13'
