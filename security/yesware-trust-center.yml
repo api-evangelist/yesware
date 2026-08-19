@@ -1,26 +1,49 @@
-generated: '2026-07-21'
+generated: '2026-08-13'
 method: searched
 probe: true
-source: https://trust.yesware.com/
+source: https://www.yesware.com/security/
 url: https://trust.yesware.com/
+compliance_page: https://www.yesware.com/security/
 certifications:
 - SOC 2 Type II
-- ISO 27001
-- GDPR
 - Skyhigh CloudTrust Enterprise-Ready
+- GDPR
 - Salesforce Security Review
+inherited_certifications:
+- ISO 27001
+- SSAE16 SOC 1 / SOC 2 / SOC 3
+- FedRAMP/FISMA
 certification_notes:
-  soc2: Yesware maintains a current SOC 2 Type II report; available under NDA via Account Manager (per yesware.com/security).
-  iso27001: Inherited via AWS infrastructure (SSAE16 SOC 1/2/3, ISO 27001, FedRAMP/FISMA).
-compliance_page: https://www.yesware.com/security/
+  soc2: >-
+    Yesware maintains a current SOC 2 Type II report (SSAE No. 18, AICPA); a copy is
+    available on request via an Account Manager under mutual NDA. Verified verbatim on
+    https://www.yesware.com/security/.
+  inherited: >-
+    ISO 27001, SSAE16 SOC 1/2/3 and FedRAMP/FISMA are INHERITED from the AWS control
+    environment Yesware builds on — the page says Yesware "inherits the control
+    environment which AWS maintains". They are recorded separately from Yesware's own
+    attestations so the profile does not credit Yesware with certifications it does not
+    itself hold.
+  skyhigh: Awarded the Skyhigh CloudTrust rating of Enterprise-Ready.
+security_program:
+  vulnerability_management: regular vulnerability scans of internet-facing applications using accredited industry-standard tools
+  breach_notification: affected users notified promptly of nature and extent of a breach
+trust_portal_note: >-
+  trust.yesware.com resolves (HTTP 200) but is a client-rendered trust-portal SPA — the
+  served HTML carries no certification text, which is why the mechanical probe read zero
+  certs from it. Every certification above is taken from the server-rendered
+  https://www.yesware.com/security/ page instead.
 evidence:
-- source: https://trust.yesware.com/
-  keywords:
-  - trust center
-  - compliance certification
 - source: https://www.yesware.com/security/
+  status: 200
   keywords:
   - SOC 2 Type II
-  - ISO 27001
-  - GDPR
   - Skyhigh CloudTrust
+  - ISO 27001
+  - FedRAMP/FISMA
+  - Vulnerability Management
+- source: https://trust.yesware.com/
+  status: 200
+  keywords:
+  - trust center
+  note: SPA shell; no certification text in served HTML

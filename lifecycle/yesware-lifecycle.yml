@@ -1,0 +1,62 @@
+generated: '2026-08-13'
+method: probed
+source: https://status.yesware.com/api/v2/summary.json
+status_page: https://status.yesware.com/
+status_page_details:
+  provider: Atlassian Statuspage
+  page_id: 4vl4kkdcb8tz
+  time_zone: America/New_York
+  machine_readable: true
+  api:
+  - url: https://status.yesware.com/api/v2/summary.json
+    status: 200
+    content_type: application/json
+  - url: https://status.yesware.com/history.rss
+    status: 200
+    content_type: application/rss+xml
+  components:
+  - Website
+  - Tracking
+  - Mail Merge
+  - Salesforce Sync
+  - Campaigns
+  - Telephony
+  - Send Later and Reminders
+  observed_at_probe:
+    indicator: minor
+    description: Minor Service Outage
+    updated_at: '2026-08-13T14:51:46-04:00'
+  note: >-
+    The status page is the single most machine-readable surface Yesware operates.
+    It is a standard Statuspage deployment, so its v2 JSON API and RSS history are
+    consumable by an agent even though no product API exists. Components are named
+    for end-user product areas, not API services.
+versioning: null
+versioning_note: >-
+  No API versioning scheme — Yesware ships no public API. The Gmail extension and
+  Outlook add-on are versioned as distribution-store artifacts (Chrome Web Store /
+  Microsoft AppSource), not as a callable contract.
+deprecation: null
+deprecation_note: >-
+  No deprecation policy, no Sunset/Deprecation (RFC 8594) header support, and no
+  published API changelog. The one lifecycle event observable from outside is the
+  retirement of the Zendesk help center at support.yesware.com, which now 301s into
+  the Docusaurus site at docs.yesware.com — done without a published notice.
+sla: null
+sla_note: >-
+  No public SLA or uptime target is published; the Statuspage carries incident
+  history but no committed availability figure.
+changelog: null
+deprecated_operations: []
+evidence:
+- url: https://status.yesware.com/api/v2/summary.json
+  status: 200
+- url: https://status.yesware.com/history.rss
+  status: 200
+- url: https://www.yesware.com/roadmap
+  status: 404
+- url: https://www.yesware.com/release-notes
+  status: 404
+- url: https://www.yesware.com/changelog
+  status: 200
+  note: 302s into https://docs.yesware.com/docs/ — the docs home, not a changelog

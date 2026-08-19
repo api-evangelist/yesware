@@ -1,0 +1,84 @@
+generated: '2026-08-13'
+method: searched
+source: https://www.yesware.com/plans-and-pricing
+currency: USD
+billing_unit: seat
+plan_count: 4
+addon_count: 2
+notes: >-
+  Yesware sells seat-based subscriptions for the end-user product (Gmail/Outlook
+  extensions). There is no API plan, no developer tier, and no metered API pricing —
+  Yesware publishes no public developer API. Annual billing is quoted as a lower
+  per-seat monthly rate.
+plans:
+- name: Free
+  price_monthly: 0
+  price_annual_per_month: 0
+  currency: USD
+  period: per seat per month
+  limits:
+    email_open_tracking: limited to 24 hours
+    campaign_recipients_per_month: 10
+  included:
+  - Basic email open tracking (24-hour window)
+  - Basic attachment tracking
+  - Meeting scheduler
+  - Email support
+- name: Pro
+  price_monthly: 19
+  price_annual_per_month: 15
+  currency: USD
+  period: per seat per month
+  limits:
+    email_open_tracking: unlimited
+    link_tracking: unlimited
+    attachment_tracking: unlimited
+    campaign_recipients_per_month: 20
+  included:
+  - Unlimited email open & link tracking
+  - Unlimited attachment tracking
+  - Personal & recipient engagement reports
+  - Email and phone support
+- name: Premium
+  price_monthly: 45
+  price_annual_per_month: 35
+  currency: USD
+  period: per seat per month
+  limits:
+    campaigns: unlimited
+    teams: unlimited
+  included:
+  - Everything in Pro
+  - Hide Yesware branding
+  - Unlimited campaigns
+  - Unlimited teams
+  - Shared templates & campaigns
+  - Team reporting
+  - Centralized team billing
+  - Customer success on-demand
+- name: Enterprise
+  price_monthly: 85
+  price_annual_per_month: 65
+  currency: USD
+  period: per seat per month
+  included:
+  - Everything in Premium
+  - Salesforce inbox sidebar
+  - Bi-directional Salesforce activity sync
+  - Salesforce calendar sync
+  - Add contacts to campaigns
+  - Import list views to campaigns
+  - Salesforce single sign-on
+  - Trusted IP ranges
+addons:
+- name: Prospector Credits — Starter
+  quota: 600 credits/year
+  price_annual_per_month: 37.5
+  currency: USD
+- name: Prospector Credits — Growth
+  quota: 3000 credits/year
+  price_annual_per_month: 125
+  currency: USD
+api_plans: []
+api_plans_note: >-
+  No API-specific plan, quota, or overage is published, because no public API exists.

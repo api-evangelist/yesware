@@ -1,19 +1,92 @@
-generated: '2026-07-21'
-method: searched
-host: https://www.yesware.com
+generated: '2026-08-13'
+method: probed
+source: live GET of /.well-known/* on every Yesware host
+hosts_probed:
+- https://www.yesware.com
+- https://app.yesware.com
+- https://docs.yesware.com
+- https://trust.yesware.com
 documents:
-- path: /.well-known/security.txt
+- host: www.yesware.com
+  path: /.well-known/security.txt
   status: 404
-- path: /.well-known/openid-configuration
+- host: www.yesware.com
+  path: /.well-known/openid-configuration
   status: 404
-- path: /.well-known/oauth-authorization-server
+- host: www.yesware.com
+  path: /.well-known/oauth-authorization-server
   status: 404
-- path: /.well-known/api-catalog
+- host: www.yesware.com
+  path: /.well-known/oauth-protected-resource
   status: 404
-- path: /.well-known/ai-plugin.json
+- host: www.yesware.com
+  path: /.well-known/api-catalog
   status: 404
+- host: www.yesware.com
+  path: /.well-known/ai-plugin.json
+  status: 404
+- host: www.yesware.com
+  path: /.well-known/agent-card.json
+  status: 404
+- host: www.yesware.com
+  path: /.well-known/agent.json
+  status: 404
+- host: app.yesware.com
+  path: /.well-known/security.txt
+  status: 404
+- host: app.yesware.com
+  path: /.well-known/openid-configuration
+  status: 404
+- host: app.yesware.com
+  path: /.well-known/oauth-authorization-server
+  status: 404
+- host: app.yesware.com
+  path: /.well-known/api-catalog
+  status: 404
+- host: app.yesware.com
+  path: /.well-known/agent-card.json
+  status: 404
+- host: app.yesware.com
+  path: /.well-known/agent.json
+  status: 404
+- host: docs.yesware.com
+  path: /.well-known/security.txt
+  status: 200
+  document: false
+  content_type: text/html
+  note: >-
+    Docusaurus SPA catch-all — returns the identical 9,681-byte docs homepage HTML
+    for every /.well-known/* path. Not a document; counted as a miss.
+- host: docs.yesware.com
+  path: /.well-known/agent-card.json
+  status: 200
+  document: false
+  content_type: text/html
+  note: SPA catch-all, same homepage shell. Not an agent card.
+- host: trust.yesware.com
+  path: /.well-known/security.txt
+  status: 200
+  document: false
+  content_type: text/html
+  note: >-
+    SafeBase/trust-portal SPA catch-all — identical 4,579-byte HTML shell for every
+    /.well-known/* path. Not a document; counted as a miss.
+- host: trust.yesware.com
+  path: /.well-known/agent-card.json
+  status: 200
+  document: false
+  content_type: text/html
+  note: SPA catch-all, same HTML shell. Not an agent card.
+result:
+  real_documents: 0
+  agent_card: none
+  security_txt: none
 notes: >-
-  yesware.com serves a 301 redirect on /.well-known/* paths; none resolve to a
-  published discovery document. www.yesware.com returns 404 for security.txt.
-  Security contact + disclosure policy are published on the human security page
-  (https://www.yesware.com/security/) rather than a machine-readable security.txt.
+  No Yesware host serves a real /.well-known/ discovery document. www.yesware.com
+  and app.yesware.com return honest 404s ("Invalid .well-known request").
+  docs.yesware.com and trust.yesware.com are single-page apps whose catch-all
+  answers HTTP 200 with the same HTML shell for every path — a 200 that carries no
+  document, so it is recorded as a miss and NO WellKnown pointer is emitted in
+  apis.yml. Yesware's security contact and responsible-disclosure policy are
+  published as human prose at https://www.yesware.com/security/ rather than as a
+  machine-readable RFC 9116 security.txt.

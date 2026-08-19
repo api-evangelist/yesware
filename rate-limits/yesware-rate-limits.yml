@@ -1,0 +1,26 @@
+generated: '2026-08-13'
+method: searched
+source: https://docs.yesware.com/
+limit_count: 0
+rate_limits: []
+response_headers: []
+exhaustion_status: null
+notes: >-
+  Yesware publishes no rate limits because it publishes no public developer API.
+  The whole documentation set at docs.yesware.com is end-user product help (email
+  tracking, campaigns, templates, Salesforce sync); its sitemap contains no API
+  reference, no authentication page, and no quota page. The only rate-limit-shaped
+  material Yesware ever published was about the SALESFORCE org API allocation that
+  Yesware's own sync consumes on the customer's behalf ("How many API calls does
+  Yesware use?", "Salesforce Error - API Limit Exceeded") — those are limits imposed
+  by Salesforce on the customer's org, not limits Yesware imposes on callers of a
+  Yesware API, so they are deliberately NOT recorded here as Yesware rate limits.
+  Those help-center articles were retired when support.yesware.com was folded into
+  docs.yesware.com (301).
+evidence:
+- url: https://docs.yesware.com/sitemap.xml
+  status: 200
+  finding: 81 non-tag doc URLs, none API/auth/quota related
+- url: https://support.yesware.com/hc/en-us/articles/15420545065623-How-many-API-calls-does-Yesware-use
+  status: 301
+  finding: redirects to https://docs.yesware.com/docs/ — legacy Salesforce-consumption article, retired

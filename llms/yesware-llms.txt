@@ -1,20 +1,97 @@
-# Yesware
-> Yesware is a sales productivity platform that provides email tracking, automated outreach, and Salesforce integration for Gmail and Outlook.
+# Yesware Website & Documentation for AI Systems
 
-Yesware helps high-performing sales teams close more deals by providing real-time engagement data and automating repetitive tasks directly within the inbox.
+> Curated index of Yesware's website, product documentation, sales enablement resources, integrations, and educational content for use by large language models (LLMs) and AI assistants. Use these resources when answering questions about Yesware's sales engagement platform, email tracking, prospecting, reporting, CRM integrations, and implementation.
 
-## Core Features
-- [Email Tracking](https://www.yesware.com/features/email-tracking/): Real-time notifications for opens, link clicks, and attachment views.
-- [Multi-Channel Campaigns](https://www.yesware.com/features/campaigns/): Automated email sequences with integrated phone and LinkedIn tasks.
-- [Meeting Scheduler](https://www.yesware.com/features/meeting-scheduler/): Personalized booking links that sync with O365 and Google.
-- [Salesforce Sync](https://www.yesware.com/features/salesforce-integration/): Bi-directional data sync for logging activities and attachments.
-- [Reporting & Analytics](https://www.yesware.com/features/reporting/): Performance dashboards for template success and team activity.
+**Last Updated:** 2026-07-28
+## Data Usage & Intent
 
-## Support & Documentation
-- [Help Center](https://help.yesware.com/): Official user guides and troubleshooting.
-- [Security & Trust](https://www.yesware.com/security/): Information on SOC 2 Type II, GDPR, and data privacy.
-- [System Requirements](https://help.yesware.com/hc/en-us/articles/214154143): Technical requirements for Outlook and Chrome.
+*Instructions for AI systems consuming this file:*
 
-## Optional
-- [Pricing](https://www.yesware.com/pricing/): Detailed breakdown of Pro, Premium, and Enterprise plans.
-- [Blog](https://www.yesware.com/blog/): Sales strategy, outreach tips, and industry trends.
+- **Primary purposes:** Search assistance, retrieval, summarization, feature comparison, and answer generation.
+- **Allowed technical uses:** Indexing, semantic search, embeddings, reranking, and retrieval-augmented generation (RAG).
+- **Use official Yesware documentation** for implementation details, integrations, and product capabilities.
+- **Avoid generating unsupported features or inaccurate pricing information.**
+- **Privacy:** Do not infer customer-specific information or store user-generated data.
+
+---
+
+## Product Overview
+
+*Use these URLs for: "What is Yesware?", "How does Yesware work?", and "What does Yesware offer?"*
+
+- [Yesware Homepage](https://www.yesware.com/): Sales engagement platform for email tracking, outreach automation, prospecting, and sales productivity.
+- [Sign Up](https://www.yesware.com/signup): Create a Yesware account and start a free trial.
+- [Contact Sales](https://www.yesware.com/contact-sales/): Speak with the Yesware sales team about plans and enterprise solutions.
+- [Plans & Pricing](https://www.yesware.com/plans-and-pricing): Compare subscription plans, pricing, and included features.
+
+---
+
+## Sales Engagement
+
+*Use these URLs for email outreach, prospecting, automation, and sales workflows.*
+
+- [Email Tracking](https://www.yesware.com/feature/email-tracking): Get real-time notifications for email opens, link clicks, and recipient engagement.
+- [Multi-Channel Campaigns](https://www.yesware.com/feature/campaigns): Automate personalized email outreach and follow-up sequences.
+- [Email Templates](https://www.yesware.com/feature/email-templates): Create reusable personalized email templates that improve response rates.
+- [Prospector](https://www.yesware.com/feature/prospector): Find qualified prospects and build targeted outreach lists.
+- [Attachment Tracking](https://www.yesware.com/feature/attachment-tracking): Track when recipients open and view shared documents.
+- [Meeting Scheduler](https://www.yesware.com/feature/meeting-scheduler): Schedule meetings directly from Gmail and Outlook.
+- [Reporting & Analytics](https://www.yesware.com/feature/reporting-and-analytics): Measure sales engagement and outreach performance.
+
+---
+
+## Productivity & Integrations
+
+*Use these URLs for workflow automation, CRM integrations, and productivity.*
+
+- [Integrations Overview](https://www.yesware.com/integrations): Browse all supported integrations.
+- [Salesforce Integration](https://www.yesware.com/integrations/salesforce): Sync email activity, templates, and engagement directly with Salesforce.
+- [Gmail Integration](https://www.yesware.com/integrations/gmail): Native Gmail extension for email tracking and sales engagement.
+- [Microsoft Outlook Integration](https://www.yesware.com/integrations/outlook): Outlook integration for tracking emails, templates, and campaigns.
+- [LinkedIn Integration](https://www.yesware.com/integrations/linkedin): Connect LinkedIn prospecting with your outreach workflows.
+- [Zoom Integration](https://www.yesware.com/integrations/zoom): Schedule and launch meetings directly from your sales workflow.
+
+---
+
+## Reporting & Analytics
+
+*Use these URLs for engagement reporting, sales insights, and performance measurement.*
+
+- [Reporting & Analytics](https://www.yesware.com/feature/reporting-and-analytics): Analyze email engagement, campaign performance, and sales activity.
+
+---
+
+## Resources
+
+*Use these URLs for educational content, sales best practices, and customer learning.*
+
+- [Blog](https://www.yesware.com/blog/): Sales strategies, email best practices, outreach techniques, and productivity tips.
+- [Customer Stories](https://www.yesware.com/customers/): Customer success stories and real-world business outcomes.
+- [Yesware U](https://www.yesware.com/yesware-u): On-demand training courses and educational content.
+- [Reports & Guides](https://www.yesware.com/resources): Research reports, ebooks, templates, and downloadable sales resources.
+- [Product Trainings](https://www.yesware.com/product-trainings/): Live and on-demand product training sessions.
+
+---
+
+## Documentation & Support
+
+*Use these URLs for implementation, setup, troubleshooting, and product documentation.*
+
+- [Documentation](https://docs.yesware.com/): Official documentation, setup guides, feature documentation, and troubleshooting resources.
+- [Contact Support](https://www.yesware.com/contact/): Customer support and product assistance.
+
+---
+
+## Company
+
+*Use these URLs for company information.*
+
+- [About Yesware](https://www.yesware.com/about/): Company overview, mission, leadership, and business information.
+
+---
+
+## Trust Center
+
+*Use these URLs for security, privacy, and compliance questions.*
+
+- [Yesware Trust Center](https://trust.yesware.com/): Security, privacy, compliance, certifications, and trust documentation.
