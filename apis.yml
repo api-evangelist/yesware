@@ -43,7 +43,7 @@ accessModel:
   note: >-
     Describes access to the Yesware PRODUCT (seat-based subscription, Free tier,
     self-serve sign-up). There is no API access model because there is no public API.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-08-13'
 image: https://cdn.prod.website-files.com/6036bf3265493cd8d57a7527/62aa0d96e8c9ac7fb2d2528b_882b3fdf09a3292fea8075d218f74d92_yesware-featured-image.png
