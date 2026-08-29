@@ -27,6 +27,17 @@ x-acquired-by: vendasta
 x-acquired-date: '2022-10-17'
 x-tier: stub
 x-tier-reason: portfolio-lead
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-service
