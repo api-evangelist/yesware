@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/yesware/integrations
+- https://n8n.io/integrations/yesware/
+- https://composio.dev/toolkits/yesware
+- https://monid.ai/tools/yesware
+checked:
+- https://composio.dev/toolkits/yesware
+- https://monid.ai/tools/yesware
+- https://n8n.io/integrations/yesware/
+- https://zapier.com/apps/yesware/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
